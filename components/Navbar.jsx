@@ -7,6 +7,8 @@ import Navbar from "react-bootstrap/Navbar"
 import NavDropdown from "react-bootstrap/NavDropdown"
 import Offcanvas from "react-bootstrap/Offcanvas"
 
+import styles from "../styles/NavbarLayout.module.scss"
+
 export default function NavbarLayout({ expand }) {
     const navbarText = [
         {
@@ -58,7 +60,7 @@ export default function NavbarLayout({ expand }) {
     ]
     return (
         <>
-            <Navbar key={expand} bg='light' expand={expand} className='mb-3'>
+            <Navbar key={expand} bg='light' expand={expand} className={styles.navbar + ' mb-3'}>
                 <Container fluid>
                     <Navbar.Brand href='#'>Fitiavana</Navbar.Brand>
                     <Navbar.Toggle
@@ -73,7 +75,7 @@ export default function NavbarLayout({ expand }) {
                             <Offcanvas.Title
                                 id={`offcanvasNavbarLabel-expand-${expand}`}
                             >
-                                Offcanvas
+                                Navigation
                             </Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
