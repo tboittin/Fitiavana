@@ -6,6 +6,7 @@ import styles from "../styles/Home.module.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 import Hero from "../components/Hero"
 import TitleSection from "../components/TitleSection"
+import SponsorSection from "../components/SponsorSection"
 
 export default function Home() {
     return (
@@ -22,6 +23,7 @@ export default function Home() {
             <NavbarLayout expand={false} />
             <Hero />
             <TitleSection/>
+            <SponsorSection/>
             {/* TODO: Page d'accueil */}
             {/* TODO: Layout generale */}
 
