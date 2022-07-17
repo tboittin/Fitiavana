@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import Hero from "../components/Hero"
+import TitleSection from "../components/TitleSection"
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
 
             <NavbarLayout expand={false} />
             <Hero />
+            <TitleSection/>
             {/* TODO: Page d'accueil */}
             {/* TODO: Layout generale */}
 
