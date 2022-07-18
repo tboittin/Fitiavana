@@ -60,7 +60,7 @@ export default function NavbarLayout({ expand }) {
     ]
     return (
         <>
-            <Navbar key={expand} bg='light' expand={expand} className={styles.navbar + ' mb-3'}>
+            <Navbar key={expand} bg='light' expand={expand} className={styles.navbar}>
                 <Container fluid>
                     <Navbar.Brand href='#'>Fitiavana</Navbar.Brand>
                     <Navbar.Toggle
