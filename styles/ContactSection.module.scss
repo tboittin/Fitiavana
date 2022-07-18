@@ -1,0 +1,23 @@
+.contact {
+    background-color: white;
+    height: 40vh;
+    position: relative;
+    z-index: 10;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        font-size: 1.3rem;
+        margin: 0 5vw;
+    }
+
+    h3 {
+        font-size: 1rem;
+        margin: 2vh 5vw;
+    }
+}

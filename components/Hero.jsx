@@ -14,7 +14,7 @@ export default function Hero() {
                     className={styles.heroBackground}
                 />
             </div>
-            <h1 className={styles.title}>
+            <h1 className={styles.heroTitle}>
                 Bienvenue sur le site de Fitiavana Madagascar
             </h1>
         </div>
