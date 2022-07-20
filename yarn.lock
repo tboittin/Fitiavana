@@ -1732,6 +1732,11 @@
   "resolved" "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz"
   "version" "0.2.0"
 
+"the-new-css-reset@^1.7.2":
+  "integrity" "sha512-uWlV3w6RU8LdMcMxzwt2XE0LFbOoHT/4u2R0GgohGyJCM29ByQCMJGwnPcTIMw9GQF2H5fGGW12GsDCb+wtq/w=="
+  "resolved" "https://registry.npmjs.org/the-new-css-reset/-/the-new-css-reset-1.7.2.tgz"
+  "version" "1.7.2"
+
 "to-regex-range@^5.0.1":
   "integrity" "sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ=="
   "resolved" "https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz"

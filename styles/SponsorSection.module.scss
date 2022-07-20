@@ -1,7 +1,6 @@
 @import './variables.scss';
 
 .sponsor {
-    background-color: blue;
     height: 40vh;
     .sponsorImage {
         height: 100%;
@@ -14,8 +13,8 @@
         }
     }
     .sponsorTextBlock {
-        background-color: #115211;
-        color: white;
+        background-color: $color-green;
+        color: $color-white;
         padding: 10px 20px;
         height: fit-content;
         position: relative;

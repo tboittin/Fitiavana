@@ -1,6 +1,6 @@
 import Head from "next/head"
 import NavbarLayout from "../components/Navbar"
-import styles from "../styles/Home.module.css"
+import styles from "../styles/Home.module.scss"
 
 import "bootstrap/dist/css/bootstrap.min.css"
 import Hero from "../components/Hero"
