@@ -1,0 +1,56 @@
+
+@import './variables.scss';
+
+.navbar {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    .navbarLogo {
+        margin: 1rem;
+    }
+    .navbarLinksContainer {
+        margin: 1rem;
+        display: flex;
+        .navbarLink {
+            margin: 1rem;
+        }
+    }
+    .navbarToggle {
+        height: 100%;
+        svg {
+            height: 2rem;
+            margin-right: 2rem;
+        }
+    }
+    .mobileMenu {
+        position: absolute;
+        width: 100vw;
+        height: 90vh;
+        top: 10vh;
+        margin: 0;
+        background-color: $color-white;
+        // ajouter les transitions
+    }
+}
+
+.mobile {
+    display: block;
+}
+.desktop {
+    display: none;
+}
+@include lg {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+}

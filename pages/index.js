@@ -1,5 +1,5 @@
 import Head from "next/head"
-import NavbarLayout from "../components/Navbar"
+import Navbar from "../components/Navbar"
 import styles from "../styles/Home.module.scss"
 
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -10,6 +10,8 @@ import ContactSection from "../components/ContactSection"
 import Footer from "../components/Footer"
 
 export default function Home() {
+
+
     return (
         <div className={styles.container}>
             <Head>
@@ -21,7 +23,7 @@ export default function Home() {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
 
-            <NavbarLayout expand={false} />
+            <Navbar />
             <Hero />
             <TitleSection />
             <SponsorSection />
@@ -29,9 +31,8 @@ export default function Home() {
             {/* TODO: Page d'accueil */}
             {/* TODO: Layout generale */}
 
-                <Footer/>
-            <footer>
-            </footer>
+            <Footer />
+            <footer></footer>
         </div>
     )
 }
