@@ -3,12 +3,21 @@ import styles from "../styles/ContactSection.module.scss"
 
 export default function ContactSection() {
     return (
-        <div className={styles.contact}>
-            <h3>
-                Pour toute information complémentaire n'hésitez pas à nous
-                laisser un message :
-            </h3>
-            <h2>fitiavana.madagascar@gmail.com</h2>
+        // TODO enfant avec fond transparent (decoupage du background)
+        <div className={styles.contact} id="contact">
+            <div className={styles.left}>
+                <img
+                    src='/images/logo/girl-without-bg.png'
+                    alt='smiling-girl'
+                />
+            </div>
+            <div className={styles.right}>
+                <h3>
+                    Pour toute information complémentaire, laissez-nous un
+                    message !
+                </h3>
+                <h2>fitiavana.madagascar@gmail.com</h2>
+            </div>
         </div>
     )
 }

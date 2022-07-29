@@ -2,17 +2,23 @@
 
 .title {
     background-color: $color-white;
-    height: 40vh;
+    height: 45vh;
     width: 100%;
     color: $color-green;
     z-index: 20;
     position: relative;
     text-align: center;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 0 10vw;
+
+    
     
     @include lg {
         height: 100vh;
+        img {
+            height: 70vh;
+        }
     }
 }

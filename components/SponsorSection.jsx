@@ -4,7 +4,7 @@ import styles from "../styles/SponsorSection.module.scss"
 
 export default function SponsorSection() {
     return (
-        <div className={styles.sponsor}>
+        <div className={styles.sponsor} id="sponsor">
             <div className={styles.sponsorImage}>
                 <Image
                     src='https://images.unsplash.com/photo-1628251798128-266e012ef8e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80'
