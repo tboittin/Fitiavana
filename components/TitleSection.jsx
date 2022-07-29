@@ -9,7 +9,7 @@ export default function TitleSection() {
                 alt='fitiavana-logo'
             />
             <h3>
-                Notre organisme intervient sur l'aide alimentaire des
+                Notre organisme intervient sur l&apos;aide alimentaire des
                 populations défavorisées de Madagascar
             </h3>
         </div>
