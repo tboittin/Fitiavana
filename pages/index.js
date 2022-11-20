@@ -8,6 +8,7 @@ import TitleSection from "../components/TitleSection"
 import SponsorSection from "../components/SponsorSection"
 import ContactSection from "../components/ContactSection"
 import Footer from "../components/Footer"
+import VideoSection from "../components/VideoSection"
 
 export default function Home() {
 
@@ -25,6 +26,7 @@ export default function Home() {
 
             <Navbar />
             <Hero />
+            {/* <VideoSection title="Video Bodo FR" id="rOAwDC__vYg" /> */}
             <TitleSection />
             <SponsorSection />
             <ContactSection />

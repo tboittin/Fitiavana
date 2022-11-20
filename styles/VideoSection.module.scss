@@ -1,0 +1,22 @@
+@import "./variables.scss";
+
+.video {
+    background-color: $color-white;
+    height: 45vh;
+    position: relative;
+    z-index: 10;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .videTitle {
+
+    }
+
+    @include lg {
+        height: 100vh;
+    }
+}
