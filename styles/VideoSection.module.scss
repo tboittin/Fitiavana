@@ -1,22 +1,26 @@
 @import "./variables.scss";
 
 .video {
-    background-color: $color-white;
-    height: 45vh;
-    position: relative;
-    z-index: 10;
-    max-width: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    .videTitle {
+  background-color: $color-white;
+  height: 45vh;
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
+  @media (max-width: 960px) {
+    iframe {
+      height: 30vh;
+      width: 80vw;
     }
+  }
 
-    @include lg {
-        height: 100vh;
-    }
+  @include lg {
+    height: 100vh;
+  }
 }
