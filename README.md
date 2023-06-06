@@ -1,3 +1,23 @@
+TODO List
+
+- [] Remplacement du blog4ever
+  - [] Bienvenue
+  - [] Module Vidéo
+    - [] Déclinaison Vidéo Patrick
+    - [] Déclinaison Vidéo Bodo FR & Malgache
+  - [] Module Article
+    - [] Déclinaison Volet Scolarité
+    - [] Déclinaison Volet Alimentation
+    - [] Déclinaison Volet Santé
+  - [] Module Texte
+  - [] Formulaire de parrainage
+  - [] Liens réseaux sociaux 
+
+- [] Gazetty
+- [] Contact
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
