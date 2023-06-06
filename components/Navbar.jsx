@@ -6,6 +6,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons"
 
 import styles from "../styles/Navbar.module.scss"
 import { navbarText } from "../wording/wording"
+import Link from "next/link"
 
 export default function Navbar() {
   const [displayNavbar, setDisplayNavbar] = useState(false)
@@ -36,9 +37,11 @@ export default function Navbar() {
               <div className={styles.navbarLink}>{subject.title}</div>
             </a>
           ))}
-          <a key="auth">
-            <div className={styles.navbarLink}>Se connecter</div>
-          </a>
+          <Link href="/Login">
+            <a>
+              <div className={styles.navbarLink}>Se connecter</div>
+            </a>
+          </Link>
         </ul>
       </div>
       {displayNavbar && (

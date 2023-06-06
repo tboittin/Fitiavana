@@ -21,6 +21,7 @@
     "react": "18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "18.2.0",
+    "react-firebase-hooks": "^5.1.1",
     "sass": "^1.56.1",
     "the-new-css-reset": "^1.7.3"
   },
