@@ -25,10 +25,11 @@ export default function Home() {
             </Head>
 
             <Navbar />
-            <Hero />
+            <Hero title="" darkenImage={false} />
+            <VideoSection title="" id="fSphQDq34Sg" />
             {/* <VideoSection title="Video Bodo FR" id="rOAwDC__vYg" /> */}
             <TitleSection />
-            <SponsorSection />
+            {/* <SponsorSection /> */}
             <ContactSection />
             {/* TODO: Page d'accueil */}
             {/* TODO: Layout generale */}
