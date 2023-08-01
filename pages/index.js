@@ -35,7 +35,6 @@ export default function Home() {
             {/* TODO: Layout generale */}
 
             <Footer />
-            <footer></footer>
         </div>
     )
 }
