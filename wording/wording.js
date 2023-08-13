@@ -1,7 +1,7 @@
 export const navbarText = [
     {
         title: "Qui sommes-nous ?",
-        link: "#hero"
+        link: "/qui-sommes-nous"
     },
     {
         title: "Que faisons-nous ?",
@@ -9,7 +9,7 @@ export const navbarText = [
     },
     {
         title: "Parrainer",
-        link: "#sponsor"
+        link: "/parrainage"
     },
     {
         title: "Nous contacter",

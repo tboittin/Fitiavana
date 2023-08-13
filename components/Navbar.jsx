@@ -1,4 +1,6 @@
 import React, { useState } from "react"
+import Link from "next/link"
+
 // import Image from "next/image"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -16,16 +18,18 @@ export default function Navbar() {
 
     return (
         <div className={styles.navbar}>
-            <div className={styles.navbarLogo}>
-                {/* replace img with Image from next */}
-                <img
-                    src='/images/logo/290538622_1121932522038336_2469259896100467841_n.jpg'
-                    alt='fitiavana-logo'
-                />
-                <span className={styles.navbarLogoTitle}>
-                    - Association Fitiavana
-                </span>
-            </div>
+            <Link href='/'>
+                <div className={styles.navbarLogo} >
+                    {/* replace img with Image from next */}
+                    <img
+                        src='/images/logo/290538622_1121932522038336_2469259896100467841_n.jpg'
+                        alt='fitiavana-logo'
+                    />
+                    <span className={styles.navbarLogoTitle}>
+                        - Association Fitiavana
+                    </span>
+                </div>
+            </Link>
             <div className={styles.mobile}>
                 <div className={styles.navbarToggle}>
                     <FontAwesomeIcon icon={faBars} onClick={toggleNavbar} />
@@ -34,11 +38,13 @@ export default function Navbar() {
             <div className={styles.desktop}>
                 <ul className={styles.navbarLinksContainer}>
                     {navbarText.map(subject => (
-                        <a key={subject.title} href={subject.link}>
-                            <div className={styles.navbarLink}>
-                                {subject.title}
-                            </div>
-                        </a>
+                        <div key={subject.title} className='m-2'>
+                            <Link href={subject.link}>
+                                <a className={styles.navbarLink}>
+                                    {subject.title}
+                                </a>
+                            </Link>
+                        </div>
                     ))}
                 </ul>
             </div>
