@@ -6,6 +6,23 @@ import VideoSection from "../components/VideoSection"
 import FormulairePage from "../components/Formulaire"
 
 export default function Parrainages() {
+    const formulaireParrainage = {
+        nom: {
+            title: 'nom',
+            type: 'text',
+            value: ''
+        },
+        email: {
+            title: 'email',
+            type: 'email',
+            value: ''
+        },
+        adresse: {
+            title: 'adresse',
+            type: 'adress',
+            value: ''
+        },
+    }
     return (
         <div className={styles.container}>
             <Head>
@@ -30,7 +47,9 @@ export default function Parrainages() {
             <div className='mb-5 container h-100'>
                 <div className='row'>
                     <div className='col'>
-                        <FormulairePage />
+                        <FormulairePage
+                            formulaireParrainage={formulaireParrainage}
+                        />
                     </div>
                 </div>
             </div>
