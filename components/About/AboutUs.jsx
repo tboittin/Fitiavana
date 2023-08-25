@@ -6,10 +6,10 @@ export default function AboutUs() {
     <div className={styles.aboutUs}>
       <h1>Qui sommes nous ?</h1>
       <p>
-        Notre organisme a pour but d'intervenir en priorité sur l'aide
+        Notre organisme a pour but d&apos;intervenir en priorité sur l&apos;aide
         alimentaire de populations défavorisées de Madagascar, principalement au
         niveau des enfants. Nous menons également diverses actions dans les
-        domaines de l'éducation, de la santé et de l'hygiène.
+        domaines de l&apos;éducation, de la santé et de l&apos;hygiène.
       </p>
     </div>
   )
