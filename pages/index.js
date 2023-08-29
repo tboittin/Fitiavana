@@ -25,7 +25,7 @@ export default function Home() {
       <Hero title="" darkenImage={false} />
       <VideoSection title="" id="fSphQDq34Sg" />
       <div className="container">
-        <h1>Bodo marraine de l'association</h1>
+        <h1>Bodo marraine de l&apos;association</h1>
         <div className="row">
           <div className="col-6">
             <VideoSection title="Video Bodo FR" id="rOAwDC__vYg" />
