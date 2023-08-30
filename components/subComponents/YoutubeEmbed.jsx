@@ -1,13 +1,15 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export default function YoutubeEmbed({ embedId }) {
+export default function YoutubeEmbed({ embedId, scaling}) {
+  const scaledWidth=scaling*853
+  const scaledHeight=scaling*480
+  console.log(scaledHeight)
   return (
     <iframe
-      width="853"
-      height="480"
+      width={scaledWidth}
+      height={scaledHeight}
       src={`https://www.youtube.com/embed/${embedId}`}
-      frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
       title="Embedded youtube"
