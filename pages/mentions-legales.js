@@ -38,10 +38,10 @@ const LegalMentions = () => {
                         </h2>
                         <p className='pl-4'>
                             Le contenu de ce site est la propriété de
-                            l'association Fitiavana Madagascar et est protégé
+                            l&apos;association Fitiavana Madagascar et est protégé
                             par la législation en vigueur sur les droits
-                            d'auteur. Toute reproduction est interdite sauf
-                            autorisation préalable de l'association.
+                            d&apos;auteur. Toute reproduction est interdite sauf
+                            autorisation préalable de l&apos;association.
                         </p>
                     </section>
                     <section className='mb-8'>
@@ -49,9 +49,9 @@ const LegalMentions = () => {
                             Données personnelles
                         </h2>
                         <p className='pl-4'>
-                            L'association s'engage à ne divulguer aucune
+                            L&apos;association s&apos;engage à ne divulguer aucune
                             information personnelle collectée via le site web à
-                            des tiers. Vous avez le droit d'accès, de
+                            des tiers. Vous avez le droit d&apos;accès, de
                             modification, de rectification et de suppression des
                             données qui vous concernent (art. 34 de la loi
                             "Informatique et Libertés").
@@ -61,7 +61,7 @@ const LegalMentions = () => {
                         <h2 className='text-xl font-semibold mb-2'>Cookies</h2>
                         <p className='pl-4'>
                             Ce site utilise des cookies pour améliorer
-                            l'expérience utilisateur. En utilisant notre site
+                            l&apos;expérience utilisateur. En utilisant notre site
                             web, vous acceptez tous les cookies conformément à
                             notre politique de cookies.
                         </p>
@@ -71,8 +71,8 @@ const LegalMentions = () => {
                             Liens externes
                         </h2>
                         <p className='pl-4'>
-                            Ce site peut contenir des liens vers d'autres sites
-                            web. L'association Fitiavana Madagascar n'est pas
+                            Ce site peut contenir des liens vers d&apos;autres sites
+                            web. L&apos;association Fitiavana Madagascar n&apos;est pas
                             responsable du contenu et de la politique de
                             confidentialité de ces sites.
                         </p>
@@ -82,7 +82,7 @@ const LegalMentions = () => {
                             Modifications
                         </h2>
                         <p className='pl-4'>
-                            L'association Fitiavana Madagascar se réserve le
+                            L&apos;association Fitiavana Madagascar se réserve le
                             droit de modifier à tout moment le contenu de cette
                             page. Les présentes mentions légales ont été mises à
                             jour pour la dernière fois le [Date de la dernière
