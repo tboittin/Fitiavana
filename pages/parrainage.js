@@ -1,39 +1,27 @@
-import Head from "next/head"
-import Navbar from "../components/Navbar"
-import styles from "../styles/Home.module.scss"
-import Footer from "../components/Footer"
 import VideoSection from "../components/VideoSection"
 import FormulairePage from "../components/Formulaire"
+import Layout from "../components/Layout"
 
 export default function Parrainages() {
     const formulaireParrainage = {
         nom: {
-            title: 'nom',
-            type: 'text',
-            value: ''
+            title: "nom",
+            type: "text",
+            value: "",
         },
         email: {
-            title: 'email',
-            type: 'email',
-            value: ''
+            title: "email",
+            type: "email",
+            value: "",
         },
         adresse: {
-            title: 'adresse',
-            type: 'adress',
-            value: ''
+            title: "adresse",
+            type: "adress",
+            value: "",
         },
     }
     return (
-        <div className={styles.container}>
-            <Head>
-                <title>Fitiavana</title>
-                <meta
-                    name='description'
-                    content='Parrainages - Fitiavana Madagascar'
-                />
-                <link rel='icon' href='/favicon.ico' />
-            </Head>
-            <Navbar />
+        <Layout>
             <div className='mt-5 pt-5 container h-100'>
                 <div className='row'>
                     <div className='col'>
@@ -48,12 +36,11 @@ export default function Parrainages() {
                 <div className='row'>
                     <div className='col'>
                         <FormulairePage
-                            formulaireParrainage={formulaireParrainage}
+                            formulaire={formulaireParrainage}
                         />
                     </div>
                 </div>
             </div>
-            <Footer />
-        </div>
+        </Layout>
     )
 }
