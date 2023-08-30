@@ -1,8 +1,8 @@
 import { useState } from "react"
 import capitalizeFirstLetter from "./utils/capitalizeFirstLetter"
 
-function FormulairePage({ formulaireParrainage }) {
-    const [formData, setFormData] = useState(formulaireParrainage)
+function FormulairePage({ formulaire }) {
+    const [formData, setFormData] = useState(formulaire)
 
     const handleChange = e => {
         const { name, value } = e.target
@@ -19,10 +19,9 @@ function FormulairePage({ formulaireParrainage }) {
     }
     return (
         <div className='container mt-5'>
-            <h2> Merci de remplir le formulaire ci-dessous</h2>
             <form onSubmit={handleSubmit}>
-                {Object.values(formulaireParrainage).map(champ => (
-                    <div key={champ.title} className='form-group'>
+                {Object.values(formulaire).map(champ => (
+                    <div key={champ.title} className='form-group mt-2'>
                         <label htmlFor={champ.title}>
                             {capitalizeFirstLetter(champ.title)} :
                         </label>
@@ -36,7 +35,7 @@ function FormulairePage({ formulaireParrainage }) {
                         />
                     </div>
                 ))}
-                <button type='submit' className='btn btn-primary mt-2 '>
+                <button type='submit' className='bg-blue-theme text-white mt-2 p-2 rounded '>
                     Soumettre
                 </button>
             </form>
