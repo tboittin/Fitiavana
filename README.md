@@ -8,8 +8,8 @@
 
 ### Composants communs (Environ 2 heures)
 - [x] Header avec navigation (30 min)
-- [ ] Footer avec mentions légales et autres liens (30 min)
-- [ ] Composant pour afficher des vidéos (20 min)
+- [x] Footer avec mentions légales et autres liens (30 min)
+- [x] Composant pour afficher des vidéos (20 min)
 - [ ] Composant de formulaire générique (40 min)
 
 ### Page 1: Accueil (Environ 4 heures)
