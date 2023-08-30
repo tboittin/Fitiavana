@@ -10,10 +10,10 @@
 - [x] Header avec navigation (30 min)
 - [x] Footer avec mentions légales et autres liens (30 min)
 - [x] Composant pour afficher des vidéos (20 min)
-- [ ] Composant de formulaire générique (40 min)
+- [x] Composant de formulaire générique (40 min)
 
 ### Page 1: Accueil (Environ 4 heures)
-- [ ] Intégrer la vidéo de présentation (20 min)
+- [x] Intégrer la vidéo de présentation (20 min)
 - [ ] Écrire et styliser le paragraphe de présentation (30 min)
 - [ ] 3 sections pour chaque domaine d'action (Scolarité, Alimentation, Santé) (1 heure)
 - [ ] Section sur Bodo avec les deux vidéos (40 min)

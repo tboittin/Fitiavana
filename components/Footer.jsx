@@ -19,7 +19,7 @@ const Footer = () => {
     return (
         <footer className='bg-blue-theme text-white py-4'>
             <div className='grid grid-cols-12'>
-                <ul className='container mx-auto flex justify-between col-start-3 col-end-8 mx-3'>
+                <ul className='container flex justify-between col-start-3 col-end-8 mx-3'>
                     {links.map((link, index) => (
                         <li key={index}>
                             <a
