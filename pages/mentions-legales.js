@@ -54,7 +54,7 @@ const LegalMentions = () => {
                             des tiers. Vous avez le droit d&apos;accès, de
                             modification, de rectification et de suppression des
                             données qui vous concernent (art. 34 de la loi
-                            "Informatique et Libertés").
+                            &quot;Informatique et Libertés&quot;).
                         </p>
                     </section>
                     <section className='mb-8'>
