@@ -11,13 +11,13 @@ export default function Home() {
             <Hero title='' darkenImage={false} />
             <section id='presentation' className='h-[90vh] my-auto'>
                 <h2 className='text-4xl h-45vh w-full flex justify-center p-6 my-[10vh]'>
-                    Présentation de l'association
+                    Présentation de l&apos;association
                 </h2>
                 <div className='w-10/12 grid grid-cols-6 items-center mx-auto '>
                     <div className='flex col-span-4'>
                         <VideoSection title='' id='fSphQDq34Sg' />
                     </div>
-                    <div className='col-span-2'>
+                    <div className='col-span-2 text-lg'>
                         <p className='my-4'>
                             Bienvenue sur le site de Fitiavana Madagascar, une
                             association qui a pour mission d&apos;apporter une
