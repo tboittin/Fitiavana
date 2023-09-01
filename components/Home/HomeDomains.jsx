@@ -45,7 +45,7 @@ const HomeDomains = () => {
                 <div
                     id={domain.title}
                     key={domain.title}
-                    className={`hidden w-10/12 lg:grid lg:grid-cols-6 items-center mx-auto lg:mt-5`}
+                    className={`hidden w-10/12 lg:grid lg:grid-cols-6 items-center mx-auto`}
                 > {/*lg div */}
                     <div
                         className={`col-span-3 ${
