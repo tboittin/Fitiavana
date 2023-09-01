@@ -3,14 +3,13 @@ import VideoSection from "../../components/VideoSection"
 
 const HomePresentation = () => {
     return (
-        <section id='presentation' className='my-auto'>
+        <section id='presentation'>
             <h2
             className="bg-blue-theme text-white text-2xl h-45vh w-full flex justify-center p-6"
-            // className='text-lg h-45vh w-full flex justify-center p-6 my-[10vh] lg:text-4xl '
             >
                 Présentation de l&apos;association
             </h2>
-            <div className='lg:w-10/12 lg:grid lg:grid-cols-6 items-center lg:mx-auto'>
+            <div className='items-center lg:w-10/12 lg:grid lg:grid-cols-6 lg:mx-auto lg:my-[10vh]'>
                 <div className='w-full lg:col-span-3'>
                     <VideoSection title='' id='fSphQDq34Sg' />
                 </div>

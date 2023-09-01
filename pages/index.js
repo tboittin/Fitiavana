@@ -13,7 +13,7 @@ export default function Home() {
         <Layout>
             <HomeHero title='' darkenImage={false} />
             <HomePresentation />
-            {/* <HomeDomains /> */}
+            <HomeDomains />
             <HomeActualites />
             {/* <TitleSection /> */}
             {/* <SponsorSection /> */}
