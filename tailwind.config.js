@@ -14,7 +14,7 @@ module.exports = {
             spacing: {
                 "navbar-height": "10vh",
                 "hero-height": "45vh",
-                "hero-height-lg": "100vh",
+                "hero-height-lg": "90vh",
             },
         },
     },
