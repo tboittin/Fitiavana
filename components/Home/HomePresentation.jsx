@@ -9,7 +9,7 @@ const HomePresentation = () => {
             >
                 Présentation de l&apos;association
             </h2>
-            <div className='items-center lg:w-10/12 lg:grid lg:grid-cols-6 lg:mx-auto lg:my-[10vh]'>
+            <div className='items-center w-10/12 lg:grid lg:grid-cols-6 mx-auto lg:my-[10vh]'>
                 <div className='w-full lg:col-span-3'>
                     <VideoSection title='' id='fSphQDq34Sg' />
                 </div>
