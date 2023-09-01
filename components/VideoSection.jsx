@@ -1,5 +1,3 @@
-import React from "react"
-import styles from "../styles/VideoSection.module.scss"
 import YoutubeEmbed from "./subComponents/YoutubeEmbed"
 
 export default function VideoSection({
@@ -9,11 +7,10 @@ export default function VideoSection({
 }) {
     return (
         <div
-            className='bg-white relative z-10 max-w-full overflow-hidden flex flex-col justify-center items-center text-center'
-            // className={styles.video} id="video"
+            className='bg-white max-w-full overflow-hidden flex flex-col justify-center items-center text-center'
         >
-            <h2 className={styles.videoTitle}>{title}</h2>
-            <div className={styles.videoFrame}>
+            <h2>{title}</h2>
+            <div  className="relative w-full h-0 pb-[56.25%]">
                 <YoutubeEmbed embedId={id} scaling={scaling}/>
             </div>
         </div>

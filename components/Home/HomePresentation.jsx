@@ -3,17 +3,20 @@ import VideoSection from "../../components/VideoSection"
 
 const HomePresentation = () => {
     return (
-        <section id='presentation' className='lg:h-[90vh] my-auto'>
-            <h2 className='text-lg h-45vh w-full flex justify-center p-6 my-[10vh] lg:text-4xl '>
+        <section id='presentation' className='my-auto'>
+            <h2
+            className="bg-blue-theme text-white text-2xl h-45vh w-full flex justify-center p-6"
+            // className='text-lg h-45vh w-full flex justify-center p-6 my-[10vh] lg:text-4xl '
+            >
                 Présentation de l&apos;association
             </h2>
-            <div className='lg:w-10/12 lg:grid lg:grid-cols-6 items-center mx-auto'>
-                <div className='flex col-span-4'>
+            <div className='lg:w-10/12 lg:grid lg:grid-cols-6 items-center lg:mx-auto'>
+                <div className='w-full lg:col-span-3'>
                     <VideoSection title='' id='fSphQDq34Sg' />
                 </div>
-                <div className='col-span-2 text-lg'>
+                <div className='text-sm p-5 md:text-base lg:col-span-3 lg:pl-5'>
                     <p className='my-4'>
-                        Bienvenue sur le site de Fitiavana Madagascar, une
+                        <span className="italic">Tonga soa</span> sur le site de Fitiavana Madagascar, une
                         association qui a pour mission d&apos;apporter une aide
                         alimentaire aux populations les plus vulnérables de
                         Madagascar, en mettant l&apos;accent sur les besoins des

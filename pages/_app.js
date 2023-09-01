@@ -1,5 +1,4 @@
 import "the-new-css-reset/css/reset.css"
-import "bootstrap/dist/css/bootstrap.min.css"
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
