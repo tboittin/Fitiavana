@@ -2,11 +2,10 @@ import React from "react"
 import Head from "next/head"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
-import styles from "../styles/Home.module.scss"
 
 const Layout = (props) => {
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>Fitiavana</title>
                 <meta
