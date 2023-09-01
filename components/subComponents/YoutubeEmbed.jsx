@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 export default function YoutubeEmbed({ embedId, scaling}) {
   const scaledWidth=scaling*853
   const scaledHeight=scaling*480
-  console.log(scaledHeight)
   return (
     <iframe
       width={scaledWidth}

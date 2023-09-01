@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 // import styles from "../styles/Footer.module.scss"
 
 const Footer = () => {
@@ -18,8 +17,8 @@ const Footer = () => {
     ]
     return (
         <footer className='bg-blue-theme text-white py-4'>
-            <div className='grid grid-cols-12'>
-                <ul className='container flex justify-between col-start-3 col-end-8 mx-3'>
+            <div className='lg:grid lg:grid-cols-12'>
+                <ul className='container flex flex-col px-3 lg:justify-between lg:col-start-3 lg:col-end-8 '>
                     {links.map((link, index) => (
                         <li key={index}>
                             <a
@@ -31,8 +30,8 @@ const Footer = () => {
                         </li>
                     ))}
                 </ul>
-                <div className="col-start-10">|</div>
-                <ul className='container flex justify-between col-start-11'>
+                <div className="hidden lg:block lg:col-start-10">|</div>
+                <ul className='container flex flex-col px-3 lg:justify-between lg:col-start-11'>
                     {socialMedia.map((platform, index) => (
                         <li key={index}>
                             <a
@@ -47,21 +46,6 @@ const Footer = () => {
             </div>
         </footer>
     )
-}
-
-Footer.propTypes = {
-    links: PropTypes.arrayOf(
-        PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            url: PropTypes.string.isRequired,
-        })
-    ).isRequired,
-    socialMedia: PropTypes.arrayOf(
-        PropTypes.shape({
-            name: PropTypes.string.isRequired,
-            url: PropTypes.string.isRequired,
-        })
-    ).isRequired,
 }
 
 export default Footer
