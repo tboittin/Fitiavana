@@ -18,7 +18,7 @@ const Footer = () => {
     return (
         <footer className='bg-blue-theme text-white py-4'>
             <div className='lg:grid lg:grid-cols-12'>
-                <ul className='container flex flex-col px-3 lg:justify-between lg:col-start-3 lg:col-end-8 '>
+                <ul className='container flex flex-col px-3 lg:justify-between lg:col-start-3 lg:col-end-8  lg:flex-row'>
                     {links.map((link, index) => (
                         <li key={index}>
                             <a
@@ -30,8 +30,8 @@ const Footer = () => {
                         </li>
                     ))}
                 </ul>
-                <div className="hidden lg:block lg:col-start-10">|</div>
-                <ul className='container flex flex-col px-3 lg:justify-between lg:col-start-11'>
+                <div className="hidden lg:block lg:col-start-9">|</div>
+                <ul className='container flex flex-col px-3 lg:justify-between lg:col-start-10 lg:col-end-12 lg:flex-row'>
                     {socialMedia.map((platform, index) => (
                         <li key={index}>
                             <a
