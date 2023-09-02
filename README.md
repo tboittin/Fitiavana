@@ -17,7 +17,7 @@
 - [x] Écrire et styliser le paragraphe de présentation (30 min)
 - [x] 3 sections pour chaque domaine d'action (Scolarité, Alimentation, Santé) (1 heure)
 - [x] Section sur Bodo avec les deux vidéos (40 min)
-- [ ] Tests et ajustements (40 min)
+- [x] Tests et ajustements (40 min)
 
 ### Page 2: Parrainage (Environ 3 heures)
 - [ ] Écrire et styliser le paragraphe d'explication (20 min)
