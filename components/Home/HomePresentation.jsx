@@ -1,11 +1,10 @@
-import React from "react"
 import VideoSection from "../../components/VideoSection"
 
 const HomePresentation = () => {
     return (
         <section id='presentation'>
             <h2
-            className="bg-blue-theme text-white text-2xl h-45vh w-full flex justify-center p-6"
+            className="bg-blue-theme text-white text-4xl h-45vh w-full flex justify-center p-6"
             >
                 Présentation de l&apos;association
             </h2>
