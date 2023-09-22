@@ -1,7 +1,6 @@
 import VideoSection from "../../components/VideoSection";
 
 const ParrainagePresentation = ({ videoInfos }) => {
-  console.log(videoInfos);
   return (
     <section id="presentation">
       <h2 className="bg-blue-theme text-white text-4xl h-45vh w-full flex justify-center p-6">
