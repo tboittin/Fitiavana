@@ -44,7 +44,6 @@ const HomeDomains = () => {
                 <div key={domain.title}>
                     <div
                         id={domain.title}
-                        key={domain.title}
                         className={`hidden w-10/12 lg:grid lg:grid-cols-6 items-center mx-auto`}
                     >
                         {" "}
@@ -83,7 +82,6 @@ const HomeDomains = () => {
                     </div>
                     <div
                         id={domain.title}
-                        key={domain.title}
                         className={`lg:hidden w-10/12 grid items-center mx-auto`}
                     >
                         <h3 className='flex justify-center text-2xl p-5 mt-5 lg:hidden'>
