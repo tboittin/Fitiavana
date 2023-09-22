@@ -41,68 +41,76 @@ const HomeDomains = () => {
             </h2>
 
             {domainesContent.map((domain, index) => (
-                <>
-                <div
-                    id={domain.title}
-                    key={domain.title}
-                    className={`hidden w-10/12 lg:grid lg:grid-cols-6 items-center mx-auto`}
-                > {/*lg div */}
+                <div key={domain.title}>
                     <div
-                        className={`col-span-3 ${
-                            index % 2 ? `order-1` : `order-2`
-                        } flex flex-col px-5 mt-4`}
+                        id={domain.title}
+                        key={domain.title}
+                        className={`hidden w-10/12 lg:grid lg:grid-cols-6 items-center mx-auto`}
                     >
-                        <h3 className='hidden lg:flex justify-center text-2xl'>{domain.title}</h3>
-                        {domain.text.map((text, index) => (
-                            <p key={index} className='flex justify-center p-2'>
-                                {text}
-                            </p>
-                        ))}
+                        {" "}
+                        {/*lg div */}
+                        <div
+                            className={`col-span-3 ${
+                                index % 2 ? `order-1` : `order-2`
+                            } flex flex-col px-5 mt-4`}
+                        >
+                            <h3 className='hidden lg:flex justify-center text-2xl'>
+                                {domain.title}
+                            </h3>
+                            {domain.text.map((text, index) => (
+                                <p
+                                    key={index}
+                                    className='flex justify-center p-2'
+                                >
+                                    {text}
+                                </p>
+                            ))}
+                        </div>
+                        <div
+                            className={`col-span-3 ${
+                                index % 2 ? `order-2` : `order-1`
+                            }`}
+                        >
+                            <Image
+                                src={domain.photoUrl}
+                                width={500}
+                                height={400}
+                                layout='responsive'
+                                objectFit='cover'
+                                alt='Domaine Alimentation'
+                            />
+                        </div>
                     </div>
                     <div
-                        className={`col-span-3 ${
-                            index % 2 ? `order-2` : `order-1`
-                        }`}
+                        id={domain.title}
+                        key={domain.title}
+                        className={`lg:hidden w-10/12 grid items-center mx-auto`}
                     >
-                        <Image
-                            src={domain.photoUrl}
-                            width={500}
-                            height={400}
-                            layout='responsive'
-                            objectFit='cover'
-                            alt='Domaine Alimentation'
-                        />
+                        <h3 className='flex justify-center text-2xl p-5 mt-5 lg:hidden'>
+                            {domain.title}
+                        </h3>
+                        <div className={`order-3 flex flex-col px-5 mt-4`}>
+                            {domain.text.map((text, index) => (
+                                <p
+                                    key={index}
+                                    className='flex justify-center p-2'
+                                >
+                                    {text}
+                                </p>
+                            ))}
+                        </div>
+                        <div className={`order-2`}>
+                            <Image
+                                src={domain.photoUrl}
+                                width={500}
+                                height={400}
+                                layout='responsive'
+                                objectFit='cover'
+                                alt='Domaine Alimentation'
+                            />
+                        </div>
                     </div>
                 </div>
-                <div
-                    id={domain.title}
-                    key={domain.title}
-                    className={`lg:hidden w-10/12 grid items-center mx-auto`}
-                >
-                    <h3 className='flex justify-center text-2xl p-5 mt-5 lg:hidden'>{domain.title}</h3>
-                    <div
-                        className={`order-3 flex flex-col px-5 mt-4`}
-                    >
-                        {domain.text.map((text, index) => (
-                            <p key={index} className='flex justify-center p-2'>
-                                {text}
-                            </p>
-                        ))}
-                    </div>
-                    <div
-                        className={`order-2`}
-                    >
-                        <Image
-                            src={domain.photoUrl}
-                            width={500}
-                            height={400}
-                            layout='responsive'
-                            objectFit='cover'
-                            alt='Domaine Alimentation'
-                        />
-                    </div>
-                </div>
-                </>
             ))}
         </section>
     )
