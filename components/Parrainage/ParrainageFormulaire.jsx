@@ -26,6 +26,13 @@ export const ParrainageFormulaire = () => {
             value: ['Parrainage simple', 'Parrainage double'],
         },
     }
+
+    const parrainageInitialState = {
+        nom: '',
+        email: '',
+        adresse: '',
+        parrainageType: formulaireParrainageData.parrainageType.value[0]
+    }
     return (
         <section id='comment-parrainer'>
             <h2 className='bg-blue-theme text-white text-4xl h-45vh w-full flex justify-center p-6'>
@@ -80,7 +87,7 @@ export const ParrainageFormulaire = () => {
                 <h3 className='flex justify-center text-2xl p-5 mt-5'>
                     Formulaire de Parrainage
                 </h3>
-                <FormulairePage formulaire={formulaireParrainageData} />
+                <FormulairePage propFormData={formulaireParrainageData} initialState={parrainageInitialState} />
             </div>
         </section>
     )
