@@ -33,6 +33,28 @@ export const ParrainageFormulaire = () => {
         adresse: '',
         parrainageType: formulaireParrainageData.parrainageType.value[0]
     }
+
+    const sendEmail = async (formData) => {
+        const res = await fetch('/api/sendMail', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: formData.name,
+                email: formData.email,
+                subject: "test-mail-fitiavana",
+                message: formData,
+            }),
+        });
+    
+        if (res.status === 200) {
+            console.log('Email envoyé avec succès');
+        } else {
+            console.log('Échec de l\'envoi de l\'e-mail');
+        }
+    }
+    
     return (
         <section id='comment-parrainer'>
             <h2 className='bg-blue-theme text-white text-4xl h-45vh w-full flex justify-center p-6'>
@@ -87,7 +109,7 @@ export const ParrainageFormulaire = () => {
                 <h3 className='flex justify-center text-2xl p-5 mt-5'>
                     Formulaire de Parrainage
                 </h3>
-                <FormulairePage propFormData={formulaireParrainageData} initialState={parrainageInitialState} />
+                <FormulairePage propFormData={formulaireParrainageData} initialState={parrainageInitialState} onSubmitAction={sendEmail} />
             </div>
         </section>
     )

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import capitalizeFirstLetter from './utils/capitalizeFirstLetter'
 
-function FormulairePage({ propFormData, initialState }) {
+function FormulairePage({ propFormData, initialState, onSubmitAction }) {
     const [formData, setFormData] = useState(initialState)
 
     const handleChange = (e) => {
@@ -24,6 +24,7 @@ function FormulairePage({ propFormData, initialState }) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        onSubmitAction(formData)
         //TODO traitement de formulaire parrainage
         // envoi de mail
         // captcha éventuel => à voir si on associe ça à la création de compte pour éviter le captcha
