@@ -6,7 +6,7 @@ export const ParrainageFormulaire = ({ formulaireParrainageData }) => {
                 Comment Parrainer ?
             </h2>
 
-            <div className='w-10/12 mx-auto my-5'>
+            <div className='w-10/12 mx-auto my-5 lg:w-8/12 lg:my-[10vh]'>
                 <p className="mb-3">
                     Incididunt laborum deserunt eiusmod aliqua consectetur ex
                     elit sunt culpa eiusmod veniam in mollit. Ut ad minim amet
@@ -50,8 +50,8 @@ export const ParrainageFormulaire = ({ formulaireParrainageData }) => {
                     exercitation amet laborum labore.
                 </p>
             </div>
-            <div className='w-10/12 mx-auto my-5'>
-                <h3 className='flex justify-center text-2xl p-5 mt-5 lg:hidden'>
+            <div className='w-10/12 mx-auto my-5 lg:w-8/12 lg:my-[10vh]'>
+                <h3 className='flex justify-center text-2xl p-5 mt-5'>
                     Formulaire de Parrainage
                 </h3>
                 <FormulairePage formulaire={formulaireParrainageData} />
