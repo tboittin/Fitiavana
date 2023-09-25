@@ -1,50 +1,72 @@
-import { useState } from "react"
-import capitalizeFirstLetter from "./utils/capitalizeFirstLetter"
+import { useState, useEffect } from 'react'
+import capitalizeFirstLetter from './utils/capitalizeFirstLetter'
 
 function FormulairePage({ propFormData, initialState }) {
     const [formData, setFormData] = useState(initialState)
 
-    const handleChange = e => {
+    useEffect(() => {
+        console.log(formData)
+        console.log(handleDisableSubmit())
+    }, [formData])
+
+    const handleChange = (e) => {
         const { name, value } = e.target
-        setFormData(prevState => ({
+        setFormData((prevState) => ({
             ...prevState,
             [name]: value,
         }))
     }
 
-    const handleSubmit = e => {
-        e.preventDefault()
-        //TODO traitement de formulaire parrainage
+    const handleDisableSubmit = () => {
+        return (
+            formData.name !== '' &&
+            formData.email !== '' &&
+            formData.adresse !== '' &&
+            formData.parrainageType !== ''
+        )
+        // TODO animation de soumission
     }
 
-    const selectInput = champ => (
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log('submitted')
+        //TODO traitement de formulaire parrainage
+        // envoi de mail
+        // captcha éventuel => à voir si on associe ça à la création de compte pour éviter le captcha
+    }
+
+    const selectInput = (champ) => (
         <>
             <label
-                className='block text-gray-700 text-sm font-bold mt-2'
+                className="block text-gray-700 text-sm font-bold mt-2"
                 htmlFor={champ.title}
             >
                 {champ.title} :
             </label>
-            <div className='inline-block relative w-64 mt-2'>
+            <div className="inline-block relative w-64 mt-2">
                 <select
-                    className='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline'
+                    className="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline"
                     onChange={handleChange}
                     name={champ.title}
-                    defaultValue={champ.value[0]}    
+                    defaultValue={champ.value[0]}
                 >
-                    {champ.value.map(selectValue => (
-                        <option key={selectValue} value={selectValue} required={champ.required}>
+                    {champ.value.map((selectValue) => (
+                        <option
+                            key={selectValue}
+                            value={selectValue}
+                            required={champ.required}
+                        >
                             {selectValue}
                         </option>
                     ))}
                 </select>
-                <div className='pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700'>
+                <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
                     <svg
-                        className='fill-current h-4 w-4'
-                        xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 20 20'
+                        className="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
                     >
-                        <path d='M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z' />
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                 </div>
             </div>
@@ -52,17 +74,17 @@ function FormulairePage({ propFormData, initialState }) {
         //TODO faire un tooltip expliquant parrainage simple ou double
     )
 
-    const generalInput = champ => (
-        <div key={champ.title} className='form-group content-center mt-3'>
+    const generalInput = (champ) => (
+        <div key={champ.title} className="form-group content-center mt-3">
             <label
-                className='block text-gray-700 text-sm font-bold'
+                className="block text-gray-700 text-sm font-bold"
                 htmlFor={champ.title}
             >
                 {capitalizeFirstLetter(champ.title)} :
             </label>
             <input
                 type={champ.type}
-                className='form-control shadow appearance-none w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
+                className="form-control shadow appearance-none w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id={champ.title}
                 name={champ.title}
                 onChange={handleChange}
@@ -72,17 +94,18 @@ function FormulairePage({ propFormData, initialState }) {
     )
 
     return (
-        <div className='container mt-5'>
+        <div className="container mt-5">
             <form onSubmit={handleSubmit}>
-                {Object.values(propFormData).map(champ => (
+                {Object.values(propFormData).map((champ) => (
                     <div key={champ.title}>
-                        {champ.type === "select" && selectInput(champ)}
-                        {champ.type !== "select" && generalInput(champ)}
+                        {champ.type === 'select' && selectInput(champ)}
+                        {champ.type !== 'select' && generalInput(champ)}
                     </div>
                 ))}
                 <button
-                    type='submit'
-                    className='bg-blue-theme text-white mt-5 p-2 rounded '
+                    type="submit"
+                    className="bg-blue-theme text-white mt-5 p-2 rounded"
+                    disabled={handleDisableSubmit}
                 >
                     Soumettre
                 </button>
