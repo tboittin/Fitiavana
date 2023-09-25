@@ -1,5 +1,31 @@
 import FormulairePage from "../Formulaire"
-export const ParrainageFormulaire = ({ formulaireParrainageData }) => {
+export const ParrainageFormulaire = () => {
+    const formulaireParrainageData = {
+        nom: {
+            title: 'nom',
+            type: 'text',
+            value: '',
+            required: true,
+        },
+        email: {
+            title: 'email',
+            type: 'email',
+            value: '',
+            required: true,
+        },
+        adresse: {
+            title: 'adresse',
+            type: 'adress',
+            value: '',
+            required: true,
+        },
+        parrainageType: {
+            title: 'Type de parrainage',
+            type: 'select',
+            required: true,
+            value: ['Parrainage simple', 'Parrainage double'],
+        },
+    }
     return (
         <section id='comment-parrainer'>
             <h2 className='bg-blue-theme text-white text-4xl h-45vh w-full flex justify-center p-6'>
