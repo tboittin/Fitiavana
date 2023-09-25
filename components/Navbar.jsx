@@ -7,10 +7,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 import styles from '../styles/Navbar.module.scss'
-import { navbarText } from '../wording/wording'
 
 export default function Navbar() {
     const [displayNavbar, setDisplayNavbar] = useState(false)
+
+    const navbarText = [
+        {
+            title: "Accueil",
+            link: "/"
+        },
+        {
+            title: "Parrainer",
+            link: "/parrainage"
+        },
+        {
+            title: "Nous contacter",
+            link: "/contact"
+        },
+    ]
 
     const toggleNavbar = () => {
         setDisplayNavbar(!displayNavbar)
