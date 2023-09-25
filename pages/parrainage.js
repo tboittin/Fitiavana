@@ -1,32 +1,32 @@
-import Layout from "../components/Layout"
-import { ParrainageFormulaire } from "../components/Parrainage/ParrainageFormulaire"
-import ParrainagePresentation from "../components/Parrainage/ParrainagePresentation"
+import { ParrainageFormulaire } from '../components/Parrainage/ParrainageFormulaire'
+import Layout from '../components/Layout'
+import ParrainagePresentation from '../components/Parrainage/ParrainagePresentation'
 
 export default function Parrainages() {
     const videoInfos = {
-        urlYoutubeLink: "WO7SRf5PCE0",
-        title: "Comment Parrainer",
+        urlYoutubeLink: 'WO7SRf5PCE0',
+        title: 'Comment Parrainer',
     }
     const formulaireParrainage = {
         nom: {
-            title: "nom",
-            type: "text",
-            value: "",
+            title: 'nom',
+            type: 'text',
+            value: '',
         },
         email: {
-            title: "email",
-            type: "email",
-            value: "",
+            title: 'email',
+            type: 'email',
+            value: '',
         },
         adresse: {
-            title: "adresse",
-            type: "adress",
-            value: "",
+            title: 'adresse',
+            type: 'adress',
+            value: '',
         },
         parrainageType: {
-            title: "Type de parrainage",
-            type: "select",
-            value: ["Parrainage simple", "Parrainage double"],
+            title: 'Type de parrainage',
+            type: 'select',
+            value: ['Parrainage simple', 'Parrainage double'],
         },
     }
     return (

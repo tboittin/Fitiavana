@@ -21,7 +21,7 @@
 
 ### Page 2: Parrainage (Environ 3 heures)
 - [ ] Écrire et styliser le paragraphe d'explication (20 min)
-- [ ] Intégrer la vidéo de témoignage de Bernard (20 min)
+- [x] Intégrer la vidéo de témoignage de Bernard (20 min)
 - [ ] Créer et tester le formulaire de parrainage (1 heure)
 - [ ] Tests et ajustements (40 min)
 
