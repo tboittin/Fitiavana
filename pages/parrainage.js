@@ -12,20 +12,24 @@ export default function Parrainages() {
             title: 'nom',
             type: 'text',
             value: '',
+            required: true,
         },
         email: {
             title: 'email',
             type: 'email',
             value: '',
+            required: true,
         },
         adresse: {
             title: 'adresse',
             type: 'adress',
             value: '',
+            required: true,
         },
         parrainageType: {
             title: 'Type de parrainage',
             type: 'select',
+            required: true,
             value: ['Parrainage simple', 'Parrainage double'],
         },
     }

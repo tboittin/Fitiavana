@@ -41,7 +41,7 @@ function FormulairePage({ formulaire }) {
                     onChange={handleChangeSelect}    
                 >
                     {champ.value.map(selectValue => (
-                        <option key={selectValue} name={champ.title} value={champ.value}>
+                        <option key={selectValue} name={champ.title} value={champ.value} required={champ.required}>
                             {selectValue}
                         </option>
                     ))}
@@ -75,6 +75,7 @@ function FormulairePage({ formulaire }) {
                 name={champ.title}
                 value={formData[champ.title].value}
                 onChange={handleChange}
+                required={champ.required}
             />
         </div>
     )
