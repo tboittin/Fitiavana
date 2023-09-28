@@ -12,15 +12,9 @@ function FormulairePage({ propFormData, initialState, onSubmitAction }) {
         }))
     }
 
-    const handleDisableSubmit = () => {
-        return (
-            formData.name !== '' &&
-            formData.email !== '' &&
-            formData.adresse !== '' &&
-            formData.parrainageType !== ''
-        )
+    const isFormValid = Object.values(formData).every(value => value !== '')
         // TODO animation de soumission
-    }
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -100,7 +94,7 @@ function FormulairePage({ propFormData, initialState, onSubmitAction }) {
                 <button
                     type="submit"
                     className="bg-blue-theme text-white mt-5 p-2 rounded"
-                    disabled={handleDisableSubmit}
+                    disabled={!isFormValid}
                 >
                     Soumettre
                 </button>
