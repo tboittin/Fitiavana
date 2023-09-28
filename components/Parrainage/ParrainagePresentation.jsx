@@ -11,8 +11,8 @@ const ParrainagePresentation = () => {
                 Pourquoi Parrainer ?
             </h2>
             <div className='items-center mx-auto'>
-                <div>
-                    <VideoSection title='' id={videoInfos.urlYoutubeLink} />
+                <div className="mx-auto lg:w-8/12 ">
+                    <VideoSection title='' id={videoInfos.urlYoutubeLink}/>
                 </div>
             </div>
         </section>

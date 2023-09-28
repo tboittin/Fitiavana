@@ -16,7 +16,7 @@ const Layout = (props) => {
             </Head>
 
             <Navbar />
-            <div className='flex-grow flex flex-col'>{props.children}</div>
+            <div className="flex-grow flex flex-col">{props.children}</div>
             <Footer />
         </div>
     )
