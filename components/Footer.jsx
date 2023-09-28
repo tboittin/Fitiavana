@@ -20,7 +20,7 @@ const Footer = () => {
         // autres plateformes
     ]
     return (
-        <>
+        <div>
             <footer className='bg-blue-theme text-white p-4 grid grid-cols-2 items-center lg:hidden'>
                 <div className="pl-5">
                     <ul className='container flex flex-col px-3 lg:justify-between lg:col-start-3 lg:col-end-8  lg:flex-row'>
@@ -89,7 +89,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </footer>
-        </>
+        </div>
     )
 }
 

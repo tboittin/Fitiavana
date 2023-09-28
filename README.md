@@ -1,4 +1,4 @@
-## Todo List pour le site de l'association Fitiavana Madagascar
+## MVP - Todo List pour le site de l'association Fitiavana Madagascar
 
 ### Configuration initiale (Environ 1 heure)
 - [x] Cloner le dépôt GitHub sur le poste local.
@@ -25,14 +25,15 @@
 - [ ] Créer et tester le formulaire de parrainage (1 heure)
 - [ ] Tests et ajustements (40 min)
 
+### Page 4: Contact (Environ 2 heures)
+- [ ] Créer et tester le formulaire de contact (1 heure)
+- [ ] Tests et ajustements (30 min)
+
+---
 ### Page 3: Gazetty (Environ 2 heures)
 - [ ] Composant pour afficher les PDF des newsletters (40 min)
 - [ ] Intégrer les 2 newsletters existantes (20 min)
 - [ ] Tests et ajustements (20 min)
-
-### Page 4: Contact (Environ 2 heures)
-- [ ] Créer et tester le formulaire de contact (1 heure)
-- [ ] Tests et ajustements (30 min)
 
 ### Pages additionnelles (Environ 2 heures)
 - [ ] Trombinoscope (30 min)
@@ -49,43 +50,6 @@
 - [ ] Push sur GitHub et vérifier le déploiement avec Vercel (1 heure)
 
 ---
-### Footer (Environ 30 minutes)
-
-#### Structure du footer (Environ 10 min)
-- [ ] Créer un nouveau composant React pour le footer.
-- [ ] Définir la structure HTML : divs, sections ou autres éléments nécessaires.
-
-#### Contenu (Environ 10 min)
-- [ ] Ajouter un lien vers les mentions légales.
-- [ ] Insérer des liens pour la navigation (Accueil, Parrainage, Gazetty, Contact, etc.)
-
-#### Réseaux sociaux (Environ 5 min)
-- [ ] Ajouter le lien vers la chaîne YouTube de l'association.
-- [ ] Ajouter le lien vers le groupe Facebook de l'association.
-
-#### Style (Environ 5 min)
-- [ ] Appliquer les styles CSS pour rendre le footer en accord avec le design général du site.
-
-
-
-TODO List
-
-- [] Remplacement du blog4ever
-  - [] Bienvenue
-  - [] Module Vidéo
-    - [] Déclinaison Vidéo Patrick
-    - [] Déclinaison Vidéo Bodo FR & Malgache
-  - [] Module Article
-    - [] Déclinaison Volet Scolarité
-    - [] Déclinaison Volet Alimentation
-    - [] Déclinaison Volet Santé
-  - [] Module Texte
-  - [] Formulaire de parrainage
-  - [] Liens réseaux sociaux 
-
-- [] Gazetty
-- [] Contact
-
 
 
 

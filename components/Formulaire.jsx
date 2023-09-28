@@ -12,9 +12,8 @@ function FormulairePage({ propFormData, initialState, onSubmitAction }) {
         }))
     }
 
-    const isFormValid = Object.values(formData).every(value => value !== '')
-        // TODO animation de soumission
-
+    const isFormValid = Object.values(formData).every((value) => value !== '')
+    // TODO animation de soumission
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -63,6 +62,25 @@ function FormulairePage({ propFormData, initialState, onSubmitAction }) {
         //TODO faire un tooltip expliquant parrainage simple ou double
     )
 
+    const textArea = (champ) => (
+        <div key={champ.title} className="">
+            <label
+                className="block text-gray-700 text-sm font-bold"
+                htmlFor={champ.title}
+            >
+                {capitalizeFirstLetter(champ.title)} :
+            </label>
+            <textArea
+                type={champ.type}
+                className="form-control shadow appearance-none w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                id={champ.title}
+                name={champ.title}
+                onChange={handleChange}
+                required={champ.required}
+            />
+        </div>
+    )
+
     const generalInput = (champ) => (
         <div key={champ.title} className="form-group content-center mt-3">
             <label
@@ -82,13 +100,23 @@ function FormulairePage({ propFormData, initialState, onSubmitAction }) {
         </div>
     )
 
+    const selectAppropriateComponent = (champ) => {
+        switch (champ.type) {
+            case 'select':
+                return selectInput(champ)
+            case 'textArea':
+                return textArea(champ)
+            default:
+                return generalInput(champ)
+        }
+    }
+
     return (
         <div className="container mt-5">
             <form onSubmit={handleSubmit}>
                 {Object.values(propFormData).map((champ) => (
                     <div key={champ.title}>
-                        {champ.type === 'select' && selectInput(champ)}
-                        {champ.type !== 'select' && generalInput(champ)}
+                        {selectAppropriateComponent(champ)}
                     </div>
                 ))}
                 <button
