@@ -1,4 +1,5 @@
 import FormulairePage from "../Formulaire"
+import { sendEmail } from "../utils/sendEmail"
 export const ParrainageFormulaire = () => {
     const formulaireParrainageData = {
         nom: {
@@ -32,27 +33,6 @@ export const ParrainageFormulaire = () => {
         email: '',
         adresse: '',
         parrainageType: formulaireParrainageData.parrainageType.value[0]
-    }
-
-    const sendEmail = async (formData) => {
-        const res = await fetch('/api/sendMail', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                name: formData.name,
-                email: formData.email,
-                subject: "test-mail-fitiavana",
-                message: formData,
-            }),
-        });
-    
-        if (res.status === 200) {
-            console.log('Email envoyé avec succès');
-        } else {
-            console.log('Échec de l\'envoi de l\'e-mail');
-        }
     }
     
     return (
