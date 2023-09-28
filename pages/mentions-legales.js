@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 const LegalMentions = () => {
     return (
         <Layout>
-            <div className='container bg-gray-100 mt-[50px]'>
+            <div className='container w-10/12 mx-auto mt-[50px]'>
                 <h1 className='text-2xl font-semibold mb-4'>
                     Mentions Légales
                 </h1>
