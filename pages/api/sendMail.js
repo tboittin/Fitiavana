@@ -19,13 +19,15 @@ export default async function handler(req, res) {
     });
 
     const mailData = {
-        from: email,
-        to: "ton-email@example.com",
+        from: process.env.MAIL_USER,
+        to: email,
         subject: subject,
-        text: message,
-        html: `<div>${message}</div>`
+        text: JSON.stringify(message),  // Converti en chaîne de caractères
+        html: `<div>${JSON.stringify(message)}</div>`
     };
 
+    console.log('mailData >>>>>>>')
+    console.log(mailData)
     await transporter.sendMail(mailData);
 
     res.status(200).send("Email envoyé avec succès");
