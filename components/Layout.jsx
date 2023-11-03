@@ -5,7 +5,7 @@ import Footer from './Footer'
 
 const Layout = (props) => {
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col text-center md:text-left">
             <Head>
                 <title>Fitiavana</title>
                 <meta

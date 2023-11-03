@@ -39,7 +39,7 @@ const HomeDomains = () => {
 
     return (
         <section id="domains" className="my-5">
-            <h2 className="bg-blue-theme text-white text-2xl flex justify-center p-6 lg:my-[10vh] lg:w-6/12 lg:mx-auto">
+            <h2 className="bg-blue-theme text-white text-2xl flex justify-center p-6 mx-auto md:w-6/12 md:mt-[5vh] lg:my-[10vh]">
                 Domaines d&apos;action
             </h2>
 

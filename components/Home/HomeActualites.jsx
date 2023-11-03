@@ -2,15 +2,15 @@ import VideoSection from '../VideoSection'
 
 const HomeActualites = () => {
     return (
-        <section id="actualites" className="mb-[10vh]">
-            <h2 className="bg-blue-theme text-white text-2xl flex justify-center p-6 lg:mt-[10vh] lg:w-6/12 lg:mx-auto">
+        <section id="actualites" className="md:mb-[5vh] lg:mb-[10vh]">
+            <h2 className="bg-blue-theme text-white text-2xl flex justify-center p-6 mx-auto md:w-6/12 md:mt-[5vh] lg:mt-[10vh]">
                 Bodo, marraine de l&apos;association
             </h2>
 
-            <div className='flex justify-center my-[5vh]'>
-                <p className="my-2 text-center w-6/12">
+            <div className="flex justify-center my-[5vh]">
+                <p className="my-2 text-center md:w-8/12 lg:w-6/12">
                     Bodoharisoa Razafindrazaka, mieux connue sous le pseudonyme
-                    de Bodo; elle est un véritable icône de la musique malgache.
+                    de Bodo, est un véritable icône de la musique malgache.
                     Son parcours illustre parfaitement la passion et
                     l&apos;engagement, des valeurs qu&apos;elle apporte, en tant
                     que marraine de l&apos;association, à notre mission de
