@@ -1,5 +1,5 @@
-import FormulairePage from "../Formulaire"
-import { sendEmail } from "../utils/sendEmail"
+import FormulairePage from '../Formulaire'
+import { sendEmail } from '../utils/sendEmail'
 export const ParrainageFormulaire = () => {
     const formulaireParrainageData = {
         nom: {
@@ -32,12 +32,12 @@ export const ParrainageFormulaire = () => {
         nom: '',
         email: '',
         adresse: '',
-        parrainageType: formulaireParrainageData.parrainageType.value[0]
+        parrainageType: formulaireParrainageData.parrainageType.value[0],
     }
-    
+
     return (
-        <section id='comment-parrainer'>
-            <h2 className='bg-blue-theme text-white text-4xl h-45vh w-full flex justify-center p-6'>
+        <section id="comment-parrainer">
+            {/* <h2 className='bg-blue-theme text-white text-4xl h-45vh w-full flex justify-center p-6'>
                 Comment Parrainer ?
             </h2>
 
@@ -84,12 +84,18 @@ export const ParrainageFormulaire = () => {
                     minim in nisi anim labore mollit laborum nulla ex ea
                     exercitation amet laborum labore.
                 </p>
-            </div>
-            <div className='w-10/12 mx-auto my-5 lg:w-8/12 lg:my-[10vh]'>
-                <h3 className='flex justify-center text-2xl p-5 mt-5'>
+            </div> */}
+            <div className="w-10/12 mx-auto my-5 lg:w-8/12 lg:my-[10vh] text-center">
+                {/* <h3 className='flex justify-center text-2xl p-5 mt-5'>
                     Formulaire de Parrainage
                 </h3>
-                <FormulairePage propFormData={formulaireParrainageData} initialState={parrainageInitialState} onSubmitAction={sendEmail} />
+                <FormulairePage propFormData={formulaireParrainageData} initialState={parrainageInitialState} onSubmitAction={sendEmail} /> */}
+                <p>
+                    Pour toute demande de parrainage ou pour toute informations
+                    n&apos;hésitez pas à nous laisser un message à
+                    l&apos;adresse suivante:
+                </p>
+                <p className='mt-3 text-2xl text-blue-theme'><a href="mailto:fitiavana.madagascar@gmail.com">fitiavana.madagascar@gmail.com</a></p>
             </div>
         </section>
     )
