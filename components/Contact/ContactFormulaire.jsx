@@ -56,7 +56,7 @@ export const ContactFormulaire = () => {
                     n&apos;hésitez pas à nous laisser un message à
                     l&apos;adresse suivante:
                 </p>
-                <p className="mt-3 text-2xl text-blue-theme">
+                <p className="mt-3 text-lg md:text-2xl text-blue-theme">
                     <a href="mailto:fitiavana.madagascar@gmail.com">
                         fitiavana.madagascar@gmail.com
                     </a>
