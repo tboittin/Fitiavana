@@ -1,24 +1,7 @@
 import { useState } from 'react'
 import capitalizeFirstLetter from './utils/capitalizeFirstLetter'
 
-import { useForm } from 'react-hook-form'
-
-const Input = ({ label, register, required }) => (
-    <>
-        <label>{label}</label>
-        <input {...register(label, { required })} />
-    </>
-)
-
 function FormulairePage({ propFormData, initialState, onSubmitAction }) {
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm()
-
-    const onSubmit = (data) => console.log(data)
-
     const [formData, setFormData] = useState(initialState)
 
     const handleChange = (e) => {
@@ -32,13 +15,13 @@ function FormulairePage({ propFormData, initialState, onSubmitAction }) {
     const isFormValid = Object.values(formData).every((value) => value !== '')
     // TODO animation de soumission
 
-    // const handleSubmit = (e) => {
-    //     e.preventDefault()
-    //     onSubmitAction(formData)
-    //     //TODO traitement de formulaire parrainage
-    //     // envoi de mail
-    //     // captcha éventuel => à voir si on associe ça à la création de compte pour éviter le captcha
-    // }
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        onSubmitAction(formData)
+        //TODO traitement de formulaire parrainage
+        // envoi de mail
+        // captcha éventuel => à voir si on associe ça à la création de compte pour éviter le captcha
+    }
 
     const selectInput = (champ) => (
         <>
@@ -87,15 +70,14 @@ function FormulairePage({ propFormData, initialState, onSubmitAction }) {
             >
                 {capitalizeFirstLetter(champ.title)} :
             </label>
-            <Input label='first name' register={register} required />
-            {/* <textArea
+            <textArea
                 type={champ.type}
                 className="form-control shadow appearance-none w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 id={champ.title}
                 name={champ.title}
                 onChange={handleChange}
                 required={champ.required}
-            /> */}
+            />
         </div>
     )
 
@@ -131,7 +113,7 @@ function FormulairePage({ propFormData, initialState, onSubmitAction }) {
 
     return (
         <div className="container mt-5">
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit}>
                 {Object.values(propFormData).map((champ) => (
                     <div key={champ.title}>
                         {selectAppropriateComponent(champ)}
@@ -140,7 +122,7 @@ function FormulairePage({ propFormData, initialState, onSubmitAction }) {
                 <button
                     type="submit"
                     className="bg-blue-theme text-white mt-5 p-2 rounded"
-                    // disabled={!isFormValid}
+                    disabled={!isFormValid}
                 >
                     Soumettre
                 </button>
