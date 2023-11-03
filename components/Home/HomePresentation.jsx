@@ -7,7 +7,7 @@ const HomePresentation = () => {
                 Présentation de l&apos;association
             </h2>
             <div className="items-center w-10/12 lg:grid lg:grid-cols-6 mx-auto lg:my-[10vh]">
-                <div className="w-full lg:col-span-3">
+                <div className="w-full mt-5 lg:col-span-3 lg:m-0">
                     <VideoSection title="" id="fSphQDq34Sg" />
                 </div>
                 <div className="text-sm p-5 md:text-base lg:col-span-3 lg:pl-6">
@@ -68,7 +68,7 @@ const HomePresentation = () => {
 
                 <p className="my-2 text-center">
                     Un lien au-delà des
-                    frontières.
+                    frontières
                 </p>
             </div>
         </section>
